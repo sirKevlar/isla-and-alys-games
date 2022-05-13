@@ -55,12 +55,11 @@ a:focus {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  height: 98vh;
-  min-height: 500px;
+  min-height: 200px;
   width: 80vw;
   min-width: 320px;
   max-width: 800px;
-  margin: 0;
+  margin: 30px;
   border-radius: 5px 15px;
   padding: 0;
   background-color: rgba(224, 121, 238, 0.404);
@@ -77,14 +76,14 @@ a:focus {
   margin-top: auto;
   display: grid;
   justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .background {
   width: 80%;
-  min-width: 40px;
-  max-height: 40px;
+  min-width: 30px;
+  max-height: 30px;
   padding-top: 80%;
   border-radius: 5px 15px;
   position: relative;

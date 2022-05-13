@@ -2,10 +2,10 @@
 
 const classOptions = [
   1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12,
-  13, 13, 14, 14, 15, 15, 16, 16, 17, 17, 18, 18,
+  13, 13, 14, 14, 15, 15, 16, 16,
 ];
 
-const randomRefObjGenerator = (refObj = {}, num = 36, arr = classOptions) => {
+const randomRefObjGenerator = (refObj = {}, num = 32, arr = classOptions) => {
   if (num < 1) return refObj;
   randomIndex = Math.floor(Math.random() * num);
   refObj[num] = classOptions[randomIndex];
@@ -63,7 +63,7 @@ const runGame = (e) => {
           player1VisibleScore.innerText = player1Score;
           isPlayer1sTurn = !isPlayer1sTurn;
 
-          if (player1Score + player2Score === 18) {
+          if (player1Score + player2Score === 16) {
             if (player1Score > player2Score)
               header.innerText = 'Player One Wins - Refresh to restart';
             else if (player1Score < player2Score)
@@ -75,7 +75,7 @@ const runGame = (e) => {
           player2VisibleScore.innerText = player2Score;
           isPlayer1sTurn = !isPlayer1sTurn;
 
-          if (player1Score + player2Score === 18) {
+          if (player1Score + player2Score === 16) {
             if (player1Score > player2Score)
               header.innerText = 'Player One Wins - Refresh to restart';
             else if (player1Score < player2Score)
@@ -251,25 +251,6 @@ if (pic1) {
   const cover32 = document.getElementById('cover32');
   cover32.addEventListener('click', runGame);
 
-  const pic33 = document.getElementById('pic33');
-  pic33.classList.add(`pair-num-${randomRefObj['33']}`);
-  const cover33 = document.getElementById('cover33');
-  cover33.addEventListener('click', runGame);
-
-  const pic34 = document.getElementById('pic34');
-  pic34.classList.add(`pair-num-${randomRefObj['34']}`);
-  const cover34 = document.getElementById('cover34');
-  cover34.addEventListener('click', runGame);
-
-  const pic35 = document.getElementById('pic35');
-  pic35.classList.add(`pair-num-${randomRefObj['35']}`);
-  const cover35 = document.getElementById('cover35');
-  cover35.addEventListener('click', runGame);
-
-  const pic36 = document.getElementById('pic36');
-  pic36.classList.add(`pair-num-${randomRefObj['36']}`);
-  const cover36 = document.getElementById('cover36');
-  cover36.addEventListener('click', runGame);
 }
 
 // ------- WELCOME MESSAGE -------
