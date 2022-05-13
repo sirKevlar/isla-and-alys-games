@@ -1,6 +1,5 @@
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
   color: aliceblue;
@@ -61,7 +60,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
+  margin-top: 10px;
   min-height: 200px;
   width: 80vw;
   min-width: 320px;
